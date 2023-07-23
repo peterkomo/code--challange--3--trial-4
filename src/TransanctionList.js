@@ -1,16 +1,14 @@
-// Importing the necessary modules and components
 import React from "react";
 import Transaction from "./Transaction";
 
-// Defining the TransactionsList component as a functional component
+// Functional component to render a list of transactions in a table format
 function TransactionsList({ transactions }) {
-  // The component receives an array of transactions as a prop and maps through each transaction to render <Transaction> components.
-
-  // Mapping through the transactions array to create a list of <Transaction> components
+  // Map each transaction in the 'transactions' array to a <Transaction> component
   const list = transactions.map((item) => {
+    // Pass each transaction's data as props to the <Transaction> component
     return (
       <Transaction
-        key={item.id}
+        key={item.id} // Use 'id' as the unique key for each transaction
         date={item.date}
         description={item.description}
         category={item.category}
@@ -23,7 +21,6 @@ function TransactionsList({ transactions }) {
     <table className="ui celled striped padded table">
       <tbody>
         <tr>
-          {/* Table header */}
           <th>
             <h3 className="ui center aligned header">Date</h3>
           </th>
@@ -37,12 +34,12 @@ function TransactionsList({ transactions }) {
             <h3 className="ui center aligned header">Amount</h3>
           </th>
         </tr>
-
-        {/* Rendering a list of <Transaction> components here */}
+        {/* Render the array of <Transaction> components */}
         {list}
       </tbody>
     </table>
   );
 }
 
-//
+export default TransactionsList;
+
