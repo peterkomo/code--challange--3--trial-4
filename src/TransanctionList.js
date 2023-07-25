@@ -17,6 +17,10 @@ function TransactionsList({ transactions }) {
     );
   });
 
+  const addTransaction = {
+
+  }
+
   return (
     <table className="ui celled striped padded table">
       <tbody>

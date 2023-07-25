@@ -9,13 +9,12 @@ function AddTransactionForm() {
   const [description, setDescription] = useState("");
   const [category, setCategory] = useState("");
   const [amount, setAmount] = useState("");
-
   // Function to handle form submission
   function handleSubmit(e) {
     e.preventDefault(); // Prevents the default form submission behavior
 
     // Sending a POST request to the server to add the new transaction
-    fetch("http://localhost:8001/transactions", {
+    fetch("http://localhost:4001/transactions", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
