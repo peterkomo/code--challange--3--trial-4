@@ -1,5 +1,5 @@
 import React from "react";
-import Transaction from "./Transaction";
+import Transaction from "./Transanction";
 
 // Functional component to render a list of transactions in a table format
 function TransactionsList({ transactions }) {
@@ -42,4 +42,5 @@ function TransactionsList({ transactions }) {
 }
 
 export default TransactionsList;
+
 

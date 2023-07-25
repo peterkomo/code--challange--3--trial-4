@@ -1,4 +1,3 @@
-// Importing the necessary modules
 import React from "react";
 
 // Defining the Transaction component as a functional component

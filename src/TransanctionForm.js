@@ -1,6 +1,6 @@
 // Importing necessary modules and components
 import React, { useState } from "react";
-import Transaction from "./Transaction"; // Assuming this imports a custom Transaction component
+// import Transaction from "./Transaction"; // Assuming this imports a custom Transaction component
 
 // Defining the AddTransactionForm component
 function AddTransactionForm() {
